@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_activity_log,accessactivity_log,gmt_machine.model_activity_log,base.group_user,1,1,1,1
+access_overall_equipment_effectiveness,accessoverall_equipment_effectiveness,gmt_machine.model_overall_equipment_effectiveness,base.group_user,1,1,1,1
+access_quality_control,accessquality_control,gmt_machine.model_quality_control,base.group_user,1,1,1,1
+access_machine_image,accessmachine_image,gmt_machine.model_machine_image,base.group_user,1,1,1,1
