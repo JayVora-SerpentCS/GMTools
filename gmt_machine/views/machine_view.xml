@@ -6,11 +6,22 @@
               <field name="arch" type="xml">
                   <form string='GMT Machines'>
                       <sheet>
+                          <div class="oe_button_box" name="button_box">
+	                           <button class="oe_stat_button" type="action" name="%(gmt_machine.activity_log_action)d"
+			                        icon="fa-file" title="Activity Log" string="Activity Log">
+			                    </button>
+			                    <button class="oe_stat_button" type="action" name="%(gmt_machine.quality_control_action)d"
+			                        icon="fa-cogs" title="Quality Control" string="Quality Control">
+			                    </button>
+			                    <button class="oe_stat_button" type="action" name="%(gmt_machine.overall_equipment_effectiveness_action)d"
+			                        icon="fa-pencil-square-o" title="OEE" string="OEE">
+			                    </button>
+		                    </div>
                           <field name="image_medium" widget="image" class="oe_avatar"/>
-                    <div class="oe_title">
-                        <label class="oe_edit_only" for="name" string="Machine Name"/>
-                        <h1><field name="name" placeholder="Machine Name"/></h1>
-                    </div>
+		                    <div class="oe_title">
+		                        <label class="oe_edit_only" for="name" string="Machine Name"/>
+		                        <h1><field name="name" placeholder="Machine Name"/></h1>
+		                    </div>
                        <group col="4">
                            <label for="type" string='Machine Type'/>
                                   <field name="type" nolabel='1'/>
@@ -53,34 +64,8 @@
 					                          </t>
 					                      </templates>
 					              </kanban>
-	                                 </field>
-	                              </page>
-			                      <page string="OEE">
-	                                 <field name="oee_ids">
-	                                    <tree string ='OEE' editable='top'>
-	                                       <field name="oee_type"/>
-	                                       <field name="oee_time_duration"/>
-	                                    </tree>
-	                                 </field>
-                                  </page>
-					            <page string="Activity Logs">
-					               <field name="activity_log_ids">
-					                  <tree string="Activity Logs" editable='top'>
-					                     <field name="activity_type"/>
-					                     <field name="time" widget='float_time'/>
-					                     <field name="duration"/>
-					                  </tree>
-					               </field>
-					            </page>
-					            <page string="QC">
-		                                 <field name="qc_ids">
-		                                    <tree string ='QC' editable='top'>
-		                                       <field name="error_number"/>
-		                                       <field name="error_time" widget='float_time'/>
-		                                       <field name="error_date"/>
-		                                    </tree>
-		                                 </field>
-		                        </page>
+	                            </field>
+	                        </page>
 			            </notebook>
                 </sheet>
                </form>

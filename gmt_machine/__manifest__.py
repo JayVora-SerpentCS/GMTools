@@ -14,8 +14,10 @@
     'depends': ['product'],
     'data': [
           'security/ir.model.access.csv',
+          'views/activity_log_view.xml',
+          'views/overall_equipment_effectiveness_view.xml',
+          'views/quality_control_view.xml',
           'views/machine_view.xml',
-          'views/machine_image_view.xml'
              ],
     'installable': True,
     'application':True,

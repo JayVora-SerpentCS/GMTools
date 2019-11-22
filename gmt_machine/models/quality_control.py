@@ -5,8 +5,11 @@ from odoo import fields,models
 
 class QualityControl(models.Model):
     _name = 'quality.control'
+    _description = 'Quality Control'
+    _rec_name = 'machine_id'
 
-    machine_id = fields.Many2one('product.template','Machine',domain=[('type', '=', 'machine')])    
+    machine_id = fields.Many2one('product.template', 'Machine', ondelete='cascade',
+                                 domain=[('type', '=', 'machine')])    
     error_number = fields.Integer('Error Number')
     error_time = fields.Float("Time")
     error_date = fields.Date("Date")
