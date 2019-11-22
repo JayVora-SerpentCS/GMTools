@@ -13,4 +13,5 @@ class QualityControl(models.Model):
     error_number = fields.Integer('Error Number')
     error_time = fields.Float("Time")
     error_date = fields.Date("Date")
+    qc_count = fields.Integer("QC Count")
 

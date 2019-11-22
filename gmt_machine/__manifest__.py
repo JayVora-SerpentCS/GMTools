@@ -18,6 +18,7 @@
           'views/overall_equipment_effectiveness_view.xml',
           'views/quality_control_view.xml',
           'views/machine_view.xml',
+          'views/machine_image_view.xml',
              ],
     'installable': True,
     'application':True,

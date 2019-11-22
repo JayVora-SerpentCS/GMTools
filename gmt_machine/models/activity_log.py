@@ -13,4 +13,5 @@ class ActivityLog(models.Model):
     activity_type = fields.Selection([('edit','Edit'),('auto','Auto'),('manual','Manual')],'Activity Type')
     time = fields.Float("Time")
     duration = fields.Float("Duration")
+    activitylog_count = fields.Integer('Activity Log')
 

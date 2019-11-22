@@ -3,9 +3,6 @@
 from odoo import api,fields,models
 
 
-#PRODUCT_TYPE = ('machine', 'Machine')
-
-
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
     
