@@ -8,10 +8,10 @@ class QualityControl(models.Model):
     _description = 'Quality Control'
     _rec_name = 'machine_id'
 
-    machine_id = fields.Many2one('product.template', 'Machine', ondelete='cascade',
-                                 domain=[('type', '=', 'machine')])    
+    machine_id = fields.Many2one('product.template', 'Machine',
+                                 ondelete='cascade',
+                                 domain=[('type', '=', 'machine')])
     error_number = fields.Integer('Error Number')
     error_time = fields.Float("Time")
     error_date = fields.Date("Date")
     qc_count = fields.Integer("QC Count")
-

@@ -8,8 +8,8 @@ class MachineImage(models.Model):
     _description = 'Machine Image'
     _rec_name = 'machine_id'
 
-    machine_id = fields.Many2one('product.template', 'Machine', ondelete='cascade',
+    machine_id = fields.Many2one('product.template', 'Machine',
+                                 ondelete='cascade',
                                  domain=[('type', '=', 'machine')])
     image_medium = fields.Binary('Machine')
     description = fields.Text('Description')
-

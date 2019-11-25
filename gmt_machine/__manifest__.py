@@ -11,6 +11,7 @@
     'author': "Serpent Consulting Services Pvt. Ltd.",
     'website': "http://www.serpentcs.com",
     'category': 'product',
+    'license': 'AGPL-3',
     'depends': ['product'],
     'data': [
           'security/security_view.xml',
@@ -22,6 +23,6 @@
           'views/machine_image_view.xml',
              ],
     'installable': True,
-    'application':True,
+    'application': True,
 
 }

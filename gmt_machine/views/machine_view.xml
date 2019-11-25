@@ -29,7 +29,8 @@
                                   <field name="categ_id" nolabel='1' options="{'no_create': True, 'no_create_edit':True}"/>
                           </group>
                           <group col="4">
-                            <field name="machine_user_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                            <field name="machine_supervisor_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                            <field name="machine_users_ids" widget="many2many_tags" options="{'no_create': True, 'no_create_edit':True}"/>
 			                <field name="program_name"/>
 			                <field name="mode"/>
 			                <field name="draft_number"/>
