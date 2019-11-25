@@ -1,6 +1,6 @@
 # See LICENSE file for full copyright and licensing details.
 
-from odoo import api,fields,models
+from odoo import fields, models
 
 
 class OverallEquipmentEffectiveness(models.Model):
@@ -14,8 +14,5 @@ class OverallEquipmentEffectiveness(models.Model):
     oee_idle_time = fields.Float('Idle Time')
     oee_down_time = fields.Float('Down Time')
     average_oee = fields.Integer('Average OEE')
-    
 
-            
-        
 

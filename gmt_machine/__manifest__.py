@@ -13,6 +13,7 @@
     'category': 'product',
     'depends': ['product'],
     'data': [
+          'security/security_view.xml',
           'security/ir.model.access.csv',
           'views/activity_log_view.xml',
           'views/overall_equipment_effectiveness_view.xml',
